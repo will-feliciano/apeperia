@@ -5,31 +5,31 @@
 
 	header {
 		height: auto;
+
+		.container{
+			position: static;
+		}
+
+		h1 {
+			max-width: 50%;
+			margin: 0 auto;
+
+			img {
+				max-width: 100%;
+				margin: .5em auto;
+				display: block;
+			}
+		}		
 	}
 
-	header .container{
-		position: static;
-	}
-
-	header h1 {
-		max-width: 50%;
-		margin: 0 auto;
-	}
-
-	header h1 img {
-		max-width: 100%;
-		margin: .5em auto;
-		display: block;
-	}
-
-	.menu-opcoes {
+	.menu-principal {
 		position: static;
 		display: block;
 		text-align: center;
-	}
 
-	.menu-opcoes li {
-		margin: .4em;
+		li {
+			margin: .4em;
+		}
 	}
 
 	.destaque {
@@ -37,8 +37,8 @@
 		height: 250px;
 	}
 
-	.menu-opcoes,
-	.menu-opcoes li,
+	.menu-principal,
+	.menu-principal li,
 	.post-destaque,
 	.posts-antigos,
 	form {
