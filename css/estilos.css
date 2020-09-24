@@ -356,7 +356,10 @@ td,
 th {
   padding: 0;
 }
-.default-shadow {
+.default-shadow,
+.destaque button,
+.plano button,
+.contato button {
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 .image-replacement {
@@ -394,8 +397,18 @@ header {
   width: 100%;
   position: absolute;
 }
+@media (max-width: 980px) {
+  header {
+    height: auto;
+  }
+}
 header .container {
   position: relative;
+}
+@media (max-width: 980px) {
+  header .container {
+    position: static;
+  }
 }
 .menu-principal {
   position: absolute;
@@ -410,6 +423,11 @@ header .container {
 .menu-principal li {
   display: inline-block;
   width: 5em;
+}
+@media (max-width: 980px) {
+  .menu-principal li {
+    margin: .4em;
+  }
 }
 .menu-principal a {
   color: white;
@@ -447,7 +465,6 @@ header .container {
   font-size: 1.2em;
   -webkit-border-radius: 2em;
   border-radius: 2em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
 .destaque button:hover {
@@ -556,7 +573,6 @@ header .container {
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
 }
 .icone-check,
@@ -639,7 +655,6 @@ textarea {
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 /** Footer **/
 footer {
@@ -728,12 +743,6 @@ footer a {
   .container {
     width: 90%;
   }
-  header {
-    height: auto;
-  }
-  header .container {
-    position: static;
-  }
   header h1 {
     max-width: 50%;
     margin: 0 auto;
@@ -747,9 +756,6 @@ footer a {
     position: static;
     display: block;
     text-align: center;
-  }
-  .menu-principal li {
-    margin: .4em;
   }
   .destaque {
     font-size: 14px;
