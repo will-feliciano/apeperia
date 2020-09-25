@@ -1,38 +1,38 @@
 /** Planos **/
 .planos {
     background: @cor-auxiliar;
+
+    h2 {
+        color: @cor-branca;
+    }
 }
-  
-.planos h2 {
-    color: @cor-branca;
-}
-  
+
 .plano {
     background: @cor-branca;
     width: 18em;
     display: inline-block;
     margin: 1em 0 0 1.4em;
     padding-bottom: 2em;
-}
+
+    &:hover {
+        background: #dedede;
+    }
   
-.plano:hover {
-    background: #dedede;
-}
-  
-.plano h3 {
-    color: @cor-branca;
-    font-size: 1.8em;
-    background: @cor-padrao;
-    text-align: center;
-    height: 2em;
-    padding-top: .6em;
-    margin-top: 0;
-}
-  
-.plano div {
-    text-align: center;
-    color: @cor-padrao;
-    font-size: 2.75em;
+    h3 {
+        color: @cor-branca;
+        font-size: 1.8em;
+        background: @cor-padrao;
+        text-align: center;
+        height: 2em;
+        padding-top: .6em;
+        margin-top: 0;
+    }
+
+    div {
+        text-align: center;
+        color: @cor-padrao;
+        font-size: 2.75em;
+    }
 }
   
 .itens-plano {
